@@ -18,27 +18,18 @@ import {
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
+import HomeScreen from './screens/HomeScreen';
+import CreateAudioScreen from './screens/createAudioScreen';
 
-export default class componentName extends Component {
-  render() {
-    return (
-      // <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      //   <Text> Hi </Text>
-      // </View>
-      <AppContainer />
-    );
-  }
-}
-
-class HomeScreen extends React.Component {
-  render() {
-    return (
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Home Screen</Text>
-      </View>
-    );
-  }
-}
+// class HomeScreen extends React.Component {
+//   render() {
+//     return (
+//       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+//         <Text>Home Screen</Text>
+//       </View>
+//     );
+//   }
+// }
 
 class DetailsScreen extends React.Component {
   render() {
@@ -53,10 +44,17 @@ class DetailsScreen extends React.Component {
 const AppNavigator = createMaterialBottomTabNavigator(
   {
     Home: HomeScreen,
-    Create: DetailsScreen,
+    Create: CreateAudioScreen,
   },
   {
     initialRouteName: 'Home',
   },
 );
+
 const AppContainer = createAppContainer(AppNavigator);
+
+export default class App extends Component {
+  render() {
+    return <AppContainer />;
+  }
+}
