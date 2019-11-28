@@ -97,7 +97,9 @@ class CreateAudioScreen extends React.Component {
           <View style={{justifyContent: 'center', alignItems: 'center'}}>
             <TouchableOpacity
               style={styles.getStartedCircle}
-              onPress={() => this.props.navigation.navigate('Record')}>
+              onPress={() =>
+                this.props.navigation.navigate('CreateAudioStack2')
+              }>
               <Text style={styles.getStartedCircleText}>Get Started</Text>
             </TouchableOpacity>
           </View>

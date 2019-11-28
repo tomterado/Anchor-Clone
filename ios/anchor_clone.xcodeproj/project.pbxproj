@@ -20,6 +20,10 @@
 		2DCD954D1E0B4F2C00145EB5 /* anchor_cloneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* anchor_cloneTests.m */; };
 		450AAF834F2F86D2BFFD39D0 /* libPods-anchor_clone-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FD26D004E59DDC44E38547 /* libPods-anchor_clone-tvOS.a */; };
 		60ADCC43D201870D9B4B3C49 /* libPods-anchor_clone-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9777CC41950C582BAA1C80F5 /* libPods-anchor_clone-tvOSTests.a */; };
+		6CA234A323908B0E0075E307 /* BridgingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA234A223908B0E0075E307 /* BridgingFile.swift */; };
+		6CA234A423908B0E0075E307 /* BridgingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA234A223908B0E0075E307 /* BridgingFile.swift */; };
+		6CA234A523908B0E0075E307 /* BridgingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA234A223908B0E0075E307 /* BridgingFile.swift */; };
+		6CA234A623908B0E0075E307 /* BridgingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA234A223908B0E0075E307 /* BridgingFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,11 @@
 		2D02E4901E0B4A5D006451C7 /* anchor_clone-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "anchor_clone-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42675B349FD1BA0C779D25BD /* Pods-anchor_cloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anchor_cloneTests.release.xcconfig"; path = "Target Support Files/Pods-anchor_cloneTests/Pods-anchor_cloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B145EAC427A285578C1A721 /* libPods-anchor_clone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-anchor_clone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA2349E23908B0D0075E307 /* anchor_clone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "anchor_clone-Bridging-Header.h"; sourceTree = "<group>"; };
+		6CA2349F23908B0D0075E307 /* anchor_cloneTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "anchor_cloneTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		6CA234A023908B0D0075E307 /* anchor_clone-tvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "anchor_clone-tvOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		6CA234A123908B0D0075E307 /* anchor_clone-tvOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "anchor_clone-tvOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		6CA234A223908B0E0075E307 /* BridgingFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgingFile.swift; sourceTree = "<group>"; };
 		7DD97AE2A24D78F995E11568 /* Pods-anchor_clone-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anchor_clone-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-anchor_clone-tvOSTests/Pods-anchor_clone-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92037C41FB794A52F4770FC3 /* Pods-anchor_clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anchor_clone.release.xcconfig"; path = "Target Support Files/Pods-anchor_clone/Pods-anchor_clone.release.xcconfig"; sourceTree = "<group>"; };
 		954FE273A0C3402D7F8E730A /* Pods-anchor_cloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anchor_cloneTests.debug.xcconfig"; path = "Target Support Files/Pods-anchor_cloneTests/Pods-anchor_cloneTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +170,6 @@
 				954FE273A0C3402D7F8E730A /* Pods-anchor_cloneTests.debug.xcconfig */,
 				42675B349FD1BA0C779D25BD /* Pods-anchor_cloneTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,12 +183,17 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				6CA234A223908B0E0075E307 /* BridgingFile.swift */,
 				13B07FAE1A68108700A75B9A /* anchor_clone */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* anchor_cloneTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				512E584DC218F96A27687EB2 /* Pods */,
+				6CA2349E23908B0D0075E307 /* anchor_clone-Bridging-Header.h */,
+				6CA2349F23908B0D0075E307 /* anchor_cloneTests-Bridging-Header.h */,
+				6CA234A023908B0D0075E307 /* anchor_clone-tvOS-Bridging-Header.h */,
+				6CA234A123908B0D0075E307 /* anchor_clone-tvOSTests-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -291,14 +304,20 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1100;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1100;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1100;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -309,6 +328,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -570,6 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* anchor_cloneTests.m in Sources */,
+				6CA234A423908B0E0075E307 /* BridgingFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +599,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				6CA234A323908B0E0075E307 /* BridgingFile.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				6CA234A523908B0E0075E307 /* BridgingFile.swift in Sources */,
 				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +619,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DCD954D1E0B4F2C00145EB5 /* anchor_cloneTests.m in Sources */,
+				6CA234A623908B0E0075E307 /* BridgingFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,7 +655,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 954FE273A0C3402D7F8E730A /* Pods-anchor_cloneTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -646,6 +672,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "anchor_cloneTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anchor_clone.app/anchor_clone";
 			};
 			name = Debug;
@@ -654,7 +683,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 42675B349FD1BA0C779D25BD /* Pods-anchor_cloneTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = anchor_cloneTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -666,6 +697,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "anchor_cloneTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anchor_clone.app/anchor_clone";
 			};
 			name = Release;
@@ -675,10 +708,42 @@
 			baseConfigurationReference = A96B58438A1E3ADF74C61BFF /* Pods-anchor_clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = anchor_clone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/DoubleConversion\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FBReactNativeSpec\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Folly\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RCTTypeSafety\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNGestureHandler\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNReanimated\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNScreens\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RNVectorIcons\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-Core\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-CoreModules\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTActionSheet\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTAnimation\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTBlob\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTImage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTLinking\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTNetwork\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTSettings\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTText\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-RCTVibration\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsi\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsiexecutor\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/React-jsinspector\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Yoga\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/glog\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-react-native\"",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -686,6 +751,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = anchor_clone;
+				SWIFT_OBJC_BRIDGING_HEADER = "anchor_clone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -695,6 +763,7 @@
 			baseConfigurationReference = 92037C41FB794A52F4770FC3 /* Pods-anchor_clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = anchor_clone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -705,6 +774,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = anchor_clone;
+				SWIFT_OBJC_BRIDGING_HEADER = "anchor_clone-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -716,6 +787,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -732,6 +804,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.anchor_clone-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "anchor_clone-tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -744,6 +819,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -760,6 +836,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.anchor_clone-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "anchor_clone-tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -769,8 +847,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7DD97AE2A24D78F995E11568 /* Pods-anchor_clone-tvOSTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -787,6 +867,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.anchor_clone-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "anchor_clone-tvOSTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anchor_clone-tvOS.app/anchor_clone-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
@@ -796,8 +879,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3292242EFB7691C28BDC826 /* Pods-anchor_clone-tvOSTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -814,6 +899,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.anchor_clone-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "anchor_clone-tvOSTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anchor_clone-tvOS.app/anchor_clone-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};

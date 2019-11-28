@@ -15,36 +15,49 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-import {createAppContainer} from 'react-navigation';
+import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 import HomeScreen from './screens/HomeScreen';
 import CreateAudioScreen from './screens/createAudioScreen';
+import CreateAudioScreen2 from './screens/createAudioScreen2';
 
-// class HomeScreen extends React.Component {
-//   render() {
-//     return (
-//       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-//         <Text>Home Screen</Text>
-//       </View>
-//     );
-//   }
-// }
+const HomeStack = createSwitchNavigator(
+  {
+    Home: {
+      screen: HomeScreen,
+    },
+    ViewMedia: {
+      screen: HomeScreen,
+    },
+  },
+  {
+    navigationOptions: {
+      header: null,
+    },
+  },
+);
 
-class DetailsScreen extends React.Component {
-  render() {
-    return (
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Details Screen</Text>
-      </View>
-    );
-  }
-}
+const CreateAudioStack = createSwitchNavigator(
+  {
+    CreateAudioStack1: {
+      screen: CreateAudioScreen,
+    },
+    CreateAudioStack2: {
+      screen: CreateAudioScreen2,
+    },
+  },
+  {
+    navigationOptions: {
+      header: null,
+    },
+  },
+);
 
 const AppNavigator = createMaterialBottomTabNavigator(
   {
-    Home: HomeScreen,
-    Create: CreateAudioScreen,
+    Home: HomeStack,
+    Create: CreateAudioStack,
   },
   {
     initialRouteName: 'Home',
