@@ -6,7 +6,7 @@ React Native clone for the popular podcasting app (iOS)
  -->
 
 <p align="center">
-  <img width="300" src="https://im2.ezgif.com/tmp/ezgif-2-ab36d68b7bc6.gif">
+  <img width="300" src="https://im2.ezgif.com/tmp/ezgif-2-432d333b6021.gif">
 </p>
 
 
@@ -34,13 +34,13 @@ react-native run-ios
 
 ## Built With
 
-* [React Native](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [React Native Sound](https://maven.apache.org/) - Dependency Management
-* [React Native Video](https://maven.apache.org/) - Dependency Management
+* [React Native](https://github.com/facebook/react-native) - React Native Framework
+* [React Native Sound](https://github.com/zmxv/react-native-sound) -  Sound for Reaact Native
+* [React Native Video](https://github.com/react-native-community/react-native-video) -  Video for Reaact Native
+* [React Navigation](https://github.com/react-navigation/react-navigation) - Navigation for Reaact Native
+* [React Native Swiper](https://github.com/leecade/react-native-swiper) - Swiper component for React Native.
 
-* [React Navigation](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-* [React Native Swiper](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-* [React Native Swiper](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
 
 
 ## License
