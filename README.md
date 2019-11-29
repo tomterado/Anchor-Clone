@@ -2,7 +2,12 @@
 
 React Native clone for the popular podcasting app (iOS)
 
-![Demo Video](https://im2.ezgif.com/tmp/ezgif-2-ab36d68b7bc6.gif)
+<!-- ![Demo Video](https://im2.ezgif.com/tmp/ezgif-2-ab36d68b7bc6.gif)
+ -->
+ 
+<p align="center">
+  <img width="300" height="500" src="https://im2.ezgif.com/tmp/ezgif-2-ab36d68b7bc6.gif">
+</p>
 
 
 ### Getting Started
