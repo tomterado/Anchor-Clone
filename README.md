@@ -6,7 +6,7 @@ React Native clone for the popular podcasting app (iOS)
  -->
 
 <p align="center">
-  <img width="300" src="https://im2.ezgif.com/tmp/ezgif-2-432d333b6021.gif">
+  <img width="300" src="https://im2.ezgif.com/tmp/ezgif-2-5a7a21918fef.gif">
 </p>
 
 
