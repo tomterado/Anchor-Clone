@@ -21,14 +21,17 @@ import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom
 import HomeScreen from './screens/HomeScreen';
 import CreateAudioScreen from './screens/createAudioScreen';
 import CreateAudioScreen2 from './screens/createAudioScreen2';
+import CreateAudioScreen3 from './screens/createAudioScreen3';
+import ViewPodcast from './screens/ViewPodcast';
+import Icon from 'react-native-vector-icons/Ionicons';
 
-const HomeStack = createSwitchNavigator(
+const HomeStack = createStackNavigator(
   {
     Home: {
       screen: HomeScreen,
     },
-    ViewMedia: {
-      screen: HomeScreen,
+    ViewPodcast: {
+      screen: ViewPodcast,
     },
   },
   {
@@ -44,7 +47,7 @@ const CreateAudioStack = createSwitchNavigator(
       screen: CreateAudioScreen,
     },
     CreateAudioStack2: {
-      screen: CreateAudioScreen2,
+      screen: CreateAudioScreen3,
     },
   },
   {
@@ -56,11 +59,30 @@ const CreateAudioStack = createSwitchNavigator(
 
 const AppNavigator = createMaterialBottomTabNavigator(
   {
-    Home: HomeStack,
-    Create: CreateAudioStack,
+    Home: {
+      screen: HomeStack,
+      navigationOptions: {
+        labeled: false,
+        tabBarIcon: ({tintColor, focused}) => (
+          <Icon style={[{color: tintColor}]} size={20} name={'ios-home'} />
+        ),
+      },
+    },
+    Create: {
+      screen: CreateAudioStack,
+      navigationOptions: {
+        labeled: false,
+        tabBarIcon: ({tintColor, focused}) => (
+          <Icon style={[{color: '#FFFFFF'}]} size={25} name={'md-add'} />
+        ),
+      },
+    },
   },
   {
     initialRouteName: 'Home',
+    activeColor: '#ffffff',
+    inactiveColor: '#ffffff',
+    barStyle: {backgroundColor: '#7F4BF1'},
   },
 );
 

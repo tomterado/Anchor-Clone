@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {Category} from './components/Explore/Category';
 import {LongCategory} from './components/Explore/LongCategory';
 import {CategoryText} from './components/Explore/CategoryText';
+import {withNavigation} from 'react-navigation';
 
 class HomeScreen extends React.Component {
   render() {
@@ -53,10 +54,22 @@ class HomeScreen extends React.Component {
                   <ScrollView
                     horizontal={true}
                     showsHorizontalScrollIndicator={false}>
-                    <Category imageUri={require('./images/podcast_1.png')} />
-                    <Category imageUri={require('./images/podcast_2.png')} />
-                    <Category imageUri={require('./images/podcast_1.png')} />
-                    <Category imageUri={require('./images/podcast_2.png')} />
+                    <Category
+                      imageUri={require('./images/podcast_1.png')}
+                      navigation={this.props.navigation}
+                    />
+                    <Category
+                      imageUri={require('./images/podcast_2.png')}
+                      navigation={this.props.navigation}
+                    />
+                    <Category
+                      imageUri={require('./images/podcast_1.png')}
+                      navigation={this.props.navigation}
+                    />
+                    <Category
+                      imageUri={require('./images/podcast_2.png')}
+                      navigation={this.props.navigation}
+                    />
                   </ScrollView>
                 </View>
 
@@ -118,14 +131,17 @@ class HomeScreen extends React.Component {
                       <LongCategory
                         imageUri={require('./images/made_by_anchor1.png')}
                         name="replyAll"
+                        navigation={this.props.navigation}
                       />
                       <LongCategory
                         imageUri={require('./images/made_by_anchor2.png')}
                         name="replyAll"
+                        navigation={this.props.navigation}
                       />
                       <LongCategory
                         imageUri={require('./images/made_by_anchor3.png')}
                         name="replyAll"
+                        navigation={this.props.navigation}
                       />
                     </ScrollView>
                   </View>
@@ -142,15 +158,19 @@ class HomeScreen extends React.Component {
                       showsHorizontalScrollIndicator={false}>
                       <Category
                         imageUri={require('./images/cool_podcast1.png')}
+                        navigation={this.props.navigation}
                       />
                       <Category
                         imageUri={require('./images/cool_podcast2.png')}
+                        navigation={this.props.navigation}
                       />
                       <Category
                         imageUri={require('./images/cool_podcast1.png')}
+                        navigation={this.props.navigation}
                       />
                       <Category
                         imageUri={require('./images/cool_podcast2.png')}
+                        navigation={this.props.navigation}
                       />
                     </ScrollView>
                   </View>
@@ -164,4 +184,5 @@ class HomeScreen extends React.Component {
   }
 }
 
-export default HomeScreen;
+// export default HomeScreen;
+export default withNavigation(HomeScreen);
